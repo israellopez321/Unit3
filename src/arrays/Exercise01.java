@@ -11,7 +11,7 @@ public class Exercise01 {
 		Random rand = new Random();
 
 		//Creamos una tabla con longitud 10 para contener los números	
-		int tabla1[] = new int[9];
+		int tabla1[] = new int[10];
 
 		//Bucle para ir recorriendo la tabla y ingresando los números
 		for(int i = 0; i<tabla1.length ; i++) {
