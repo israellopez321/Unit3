@@ -18,13 +18,13 @@ public class Exercise03 {
 		}
 		
 		//Bucle para sacar los datos de manera inversa
-		for(int i = numIntrod.length; i>0;i--) {
-			System.out.print(numIntrod[i] + ", ");
-			
+		for(int i = numIntrod.length-1; i>=0;i--) {
+			if (i == 0) {
+				System.out.print(numIntrod[i] + ". ");
+			} else {
+				System.out.print(numIntrod[i] + ", ");
+			}
 		}
-		
-		
-		
 		
 		//Cerramos escaner
 		sc.close();
