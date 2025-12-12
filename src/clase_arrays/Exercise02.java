@@ -23,10 +23,13 @@ public class Exercise02 {
 			} else {
 				System.out.print("Introduca los números: ");
 				segundaTabla[i-10] = sc.nextInt();
-			}
-			
+			}	
 		}
-		System.out.println(Arrays.toString(primeraTabla));
-		System.out.println(Arrays.toString(segundaTabla));
+		
+		//Mostramos si las tablas son iguales
+		System.out.println(Arrays.equals(primeraTabla, segundaTabla));
+		
+		//Cerramos escaner
+		sc.close();
 	}
 }
