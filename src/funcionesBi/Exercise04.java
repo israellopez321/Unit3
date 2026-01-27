@@ -17,11 +17,17 @@ public class Exercise04 {
 	 */
 	static void rellenarTabla(String tabla[][]) {
 		
+		int multiplicando;
+		int multiplicador;
+		
 		for (int indice1 = 0; indice1 < tabla.length; indice1++) {
 			
 			for(int indice2 = 0; indice2 < tabla[indice1].length; indice2++) {
 				
-				tabla[indice1][indice2] = "| " + indice1 + " x " + indice2 + " = " + (indice1)*(indice2) + " |";
+				multiplicando = indice1 + 1;
+				multiplicador = indice2 + 1;
+				
+				tabla[indice1][indice2] = "| " + multiplicando + " x " + multiplicador + " = " + (multiplicando)*(multiplicador) + " |";
 				
 			}	
 		}
