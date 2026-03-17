@@ -11,8 +11,6 @@ public class Ejercicio01 {
 		//Creamos un escaner
 		Scanner sc = new Scanner(System.in);
 		
-		
-		
 		//Creamos un lista Array
 		List<Integer> numPositivos = new ArrayList<>();
 		
@@ -20,7 +18,6 @@ public class Ejercicio01 {
 		
 		//Bucle para añadir numeros a la lista y preguntar por el número
 		do {
-			
 			System.out.print("Introduzca un número: ");
 			numero = sc.nextInt();
 			
@@ -28,7 +25,6 @@ public class Ejercicio01 {
 				numPositivos.add(numero);
 				
 			}
-			
 			
 		} while(numero >= 0);
 		
