@@ -60,11 +60,25 @@ public class Ejercicio05 {
 				
 				if(series.containsKey(nombre)) {
 					
-					System.out.println("La valoracion de " + nombre + " = " + series.containsValue(nombre));
+					System.out.println("La valoracion de " + nombre + " es de " + series.get(nombre));
+				} else {
+					
+					System.out.println("La serie no esta en la lista");
 				}
 				
 				break;
 			case 3:
+				
+				System.out.print("Nombre de la serie a eliminar: ");
+				String eliminar = sc.next();
+				
+				if(series.remove(eliminar) != null) {
+					
+					System.out.println("Serie eliminada");
+				} else {
+					
+					System.out.println("Esa serie no existe");
+				}
 				
 				break;
 			case 4:
